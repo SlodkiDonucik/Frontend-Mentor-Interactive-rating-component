@@ -1,0 +1,85 @@
+.container{
+    @include flexCenter;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.card{
+    width: $size_lg1;
+    height: $size_lg1;
+    border-radius: $size_sm1;
+    background-color: $color_darkDarkBlue;
+    padding: 40px;
+    color: $color_lightGray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.circle{
+    width: $size_med1;
+    height: $size_med1;
+    background-color: $color_darkBlue;
+    border-radius: 50%;
+    @include flexCenter;
+
+    .star-icon{
+        width: 22px;
+    }
+}
+.header{
+    color: $color_white;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.para{
+    line-height: 25px;
+    padding-right: 20px;
+    font-size: 1rem;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+.mark{
+    cursor: pointer;
+}
+.mark:hover{
+    background-color: $color_priOrange;
+    color: $color_white;
+}
+.mark-choice{
+    background-color: $color_lightGray;
+    color: $color_white;
+}
+
+.sub{
+    background-color: $color_priOrange;
+    color: $color_white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include flexCenter;
+    padding: 1rem;
+    border-radius: $size_med1;
+    cursor: pointer;
+}
+.sub:hover{
+    background-color: $color_white;
+    color: $color_priOrange;
+}
+.active{
+    background-color: $color_lightGray;
+    color: $color_white;
+}
+.thank-pill{
+    background-color: $color_darkBlue;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: $color_priOrange;
+}
+.thank-pos{
+    align-items: center;
+    padding: 50px 40px;
+}
+.thank-text{
+    text-align: center;
+}
